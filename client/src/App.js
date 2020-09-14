@@ -1,8 +1,17 @@
 import React from 'react';
 
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+
+import Home from './components/homePage/Home'
+
+
 function App() {
   return (
-    <h1>Direct House</h1>
+    <Router>
+      <Switch>
+        <Route exact path ="/" component ={Home}/>
+      </Switch>
+    </Router>
   );
 }
 
